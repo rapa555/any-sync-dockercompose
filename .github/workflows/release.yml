@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v7
 
       - name: Create GH Release
-        uses: softprops/action-gh-release@v0.1.15
+        uses: softprops/action-gh-release@v3
         with:
           name: Release ${{ github.ref_name }}
           generate_release_notes: true
